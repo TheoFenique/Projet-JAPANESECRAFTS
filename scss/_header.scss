@@ -7,11 +7,25 @@
 	align-items: center;
 	padding: 0 12rem;
 	box-shadow: 0 0 1em 0 rgba(0,0,0,0.1);
+  justify-content: space-between;
+  position: fixed;
+
+  .navbarLeft{
+    display: flex;
+  }
+
 	.logo{
 		width: 2.5rem;
+    height: 2.5rem;
 		padding: 1vh;
 	}
+
+  .kickstarter{
+    height: 20px;
+  }
+
 	ul{
+
 		li{
 			vertical-align: baseline;
 			display: inline-block;
@@ -19,6 +33,7 @@
 			font-family: 'Montserrat', sans-serif;
 			vertical-align: bottom;
 			padding-left: 3vw;
+      margin-top: 3%;
 		}
 	}
 }

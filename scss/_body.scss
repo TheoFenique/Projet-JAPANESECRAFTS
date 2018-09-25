@@ -1,9 +1,36 @@
+body{
+	background: rgb(100, 252, 198)
+}
 
 
-.container_video{
+
+.containerVideo{
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+
+	h1{
+		position: absolute;
+		top: 25%;
+		left: 25%;
+		font-family: 'Playfair Display', serif;
+		font-weight: 400;
+	}
+
 	.mainvideo{
+		height: 100%;
+		width: 100%;
 		object-fit: cover;
-		position: fixed;
 		z-index: -100;
 	}
+}
+
+.transition{
+	position: absolute;
+	bottom: -400px;
+
+	img{
+		width: 100%;
+	}
+
 }
