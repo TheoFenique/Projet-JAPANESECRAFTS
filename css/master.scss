@@ -8,18 +8,18 @@
 	vertical-align: baseline;
 }
 .navBar{
-	width: 100vw;
-	height: 11vh;
+	width: 75vw;
+	height: 4rem;
 	background:#262626;
 	display: flex;
 	align-items: center;
-	padding: 0 8rem;
+	padding: 0 12rem;
+	box-shadow: 0 0 1em 0 rgba(0,0,0,0.1);
 	.logo{
 		width: 2.5rem;
 		padding: 1vh;
 	}
 	ul{
-		width: 100%;
 		li{
 			vertical-align: baseline;
 			display: inline-block;
@@ -28,5 +28,12 @@
 			vertical-align: bottom;
 			padding-left: 3vw;
 		}
+	}
+}
+.container_video{
+	.mainvideo{
+		object-fit: cover;
+		position: fixed;
+		z-index: -100;
 	}
 }
