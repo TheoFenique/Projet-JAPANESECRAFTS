@@ -1,21 +1,38 @@
-body{
-	background: rgb(100, 252, 198)
+.flexContainer{
+	display: flex;
+	justify-content: center;
 }
 
+//////////////////////////First screen
 
 
 .containerVideo{
 	overflow: hidden;
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 
-	h1{
-		position: absolute;
+	.brandPresentation{
 		top: 25%;
-		left: 25%;
-		font-family: 'Playfair Display', serif;
-		font-weight: 400;
+		left : 15%;
+		position: absolute;
+
+		h1{
+			font-family: $titleFont;
+			width: 20px;
+			font-weight: 900;
+			font-size: 10rem;
+			line-height: 100px;
+		}
+
+		p{
+			font-size: 1.7rem;
+			font-family: $txtFont;
+			width: 270px;
+
+		}
 	}
+
+
 
 	.mainvideo{
 		height: 100%;
@@ -27,10 +44,213 @@ body{
 
 .transition{
 	position: absolute;
-	bottom: -400px;
+	bottom: -170px;
+	z-index: 0;
 
 	img{
 		width: 100%;
+	}
+}
+//////////////////////////Our Values
+
+.ourValues{
+	z-index: 20;
+	margin: 0 15%;
+	position: relative;
+
+	.titleBoxValues{
+		z-index: 1;
+
+		h3{
+			font-family: $titleFont;
+			font-weight: 900;
+			font-size: 7.8rem;
+		}
+		span.underTitles{
+			position: absolute;
+			font-family: 'Againts';
+			font-size: 13rem;
+			opacity: 0.15;
+			top:-27px;
+			left:355px;
+		}
+	}
+
+	.values{
+		display: flex;
+		justify-content: space-between;
+		margin-top: 100px;
+
+
+.valueTxt{
+	position: relative;
+
+	p{
+		font-size: 1.6rem;
+		font-family: $txtFont;
+		width: 200px;
+		margin: 40px 0;
+	}
+
+}
+		h2{
+			margin-top: 20px;
+			text-align: center;
+			font-family: $txtFont;
+			font-weight: 600;
+			font-size: 3rem;
+		}
+
+			span[class^="underValue"]{
+			position: absolute;
+			font-family: $titleFont;
+			font-size: 10rem;
+			opacity: 0.3;
+			color: rgb(187, 160, 118);
+			height: 107px;
+			overflow: hidden;
+		}
+
+
+		.underValue1{
+			top: -65px;
+  	  left: 87px;
+		}
+
+		.underValue2{
+			top:-65px;
+			left:73px;
+		}
+
+		.underValue3{
+			top: -60px;
+			left: 93px;
+			font-size: 8.4rem!important;
+		}
+
+		.handmade{
+
+			img{
+				width: 221px;
+				height: 174px;
+				margin-top: 47px;
+			}
+
+
+		}
+
+		.premium{
+
+			img{
+				width: 200px;
+				height: 219px;;
+			}
+		}
+
+		.art{
+
+			img{
+				width: 202px;
+				height: 178px;
+				margin-top: 47px;
+			}
+		}
+	}
+}
+
+//////////////////////////Video brandPresentation
+
+.videoPresentation{
+	width: 100%;
+	height: 900px;
+	background-image: linear-gradient(to left top, #fffcf4, #fffcf8, #fffcfc, #fffeff, #ffffff);
+	position: relative;
+	z-index: -2;
+
+	p{
+		padding: 0 30%;
+		font-family: $txtFont;
+		font-size: 1.6rem;
+	}
+
+	a{
+		display: flex;
+		text-align: center;
+		text-decoration: none;
+		color: black;
+
+		div{
+			border: 1px black solid;
+			margin: 30px auto;
+			padding: 10px 50px;
+			font-family: $txtFont;
+			font-size: 1.8rem;
+		}
+	}
+
+
+.shrine{
+	position:absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0.19;
+	width: 1300px;
+	z-index: -5;
+}
+
+	.videoPresContainer{
+		position: relative;
+
+		.videoPres{
+			width: 1000px;
+			height: 563px;
+			background: black;
+			margin: 100px auto;
+		}
+
+		.videoLignLeft{
+			position: absolute;
+			width: 200px;
+			height: 1px;
+			background: black;
+			top: 50%;
+			left: 5%;
+		}
+
+		.videoLignRight{
+			position: absolute;
+			width: 200px;
+			height: 1px;
+			background: black;
+			top: 50%;
+			right: 5%;
+		}
+	}
+}
+
+//////////////////////////More about us
+
+.moreAbout{
+	margin: 50px 15%;
+
+	.titleBoxAbout{
+		position: relative;
+	}
+
+	h3{
+		font-family: $titleFont;
+		font-weight: 900;
+		font-size: 7.8rem;
+	}
+
+	span.underTitles{
+		position: absolute;
+		font-family: 'Againts';
+		font-size: 13rem;
+		opacity: 0.15;
+		top:-27px;
+		left:-46px;
 	}
 
 }

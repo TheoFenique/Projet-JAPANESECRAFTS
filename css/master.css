@@ -1,19 +1,21 @@
 .navBar {
+  font-size: 1.27rem;
   box-sizing: border-box;
   width: 100%;
-  height: 4rem;
+  height: 60px;
   background: #262626;
   display: flex;
   align-items: center;
-  padding: 0 12rem;
-  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.1);
+  padding: 0 180px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   justify-content: space-between;
-  position: fixed; }
+  position: fixed;
+  z-index: 200; }
   .navBar .navbarLeft {
     display: flex; }
   .navBar .logo {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 25px;
+    height: 25px;
     padding: 1vh; }
   .navBar .kickstarter {
     height: 20px; }
@@ -24,21 +26,30 @@
     font-family: 'Montserrat', sans-serif;
     vertical-align: bottom;
     padding-left: 3vw;
-    margin-top: 3%; }
+    margin-top: 2.5%; }
 
-body {
-  background: #64fcc6; }
+.flexContainer {
+  display: flex;
+  justify-content: center; }
 
 .containerVideo {
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
   height: 100vh; }
-  .containerVideo h1 {
-    position: absolute;
+  .containerVideo .brandPresentation {
     top: 25%;
-    left: 25%;
-    font-family: 'Playfair Display', serif;
-    font-weight: 400; }
+    left: 15%;
+    position: absolute; }
+    .containerVideo .brandPresentation h1 {
+      font-family: "Playfair Display";
+      width: 20px;
+      font-weight: 900;
+      font-size: 10rem;
+      line-height: 100px; }
+    .containerVideo .brandPresentation p {
+      font-size: 1.7rem;
+      font-family: "Montserrat";
+      width: 270px; }
   .containerVideo .mainvideo {
     height: 100%;
     width: 100%;
@@ -47,17 +58,163 @@ body {
 
 .transition {
   position: absolute;
-  bottom: -400px; }
+  bottom: -170px;
+  z-index: 0; }
   .transition img {
     width: 100%; }
+
+.ourValues {
+  z-index: 20;
+  margin: 0 15%;
+  position: relative; }
+  .ourValues .titleBoxValues {
+    z-index: 1; }
+    .ourValues .titleBoxValues h3 {
+      font-family: "Playfair Display";
+      font-weight: 900;
+      font-size: 7.8rem; }
+    .ourValues .titleBoxValues span.underTitles {
+      position: absolute;
+      font-family: 'Againts';
+      font-size: 13rem;
+      opacity: 0.15;
+      top: -27px;
+      left: 355px; }
+  .ourValues .values {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px; }
+    .ourValues .values .valueTxt {
+      position: relative; }
+      .ourValues .values .valueTxt p {
+        font-size: 1.6rem;
+        font-family: "Montserrat";
+        width: 200px;
+        margin: 40px 0; }
+    .ourValues .values h2 {
+      margin-top: 20px;
+      text-align: center;
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 3rem; }
+    .ourValues .values span[class^="underValue"] {
+      position: absolute;
+      font-family: "Playfair Display";
+      font-size: 10rem;
+      opacity: 0.3;
+      color: #bba076;
+      height: 107px;
+      overflow: hidden; }
+    .ourValues .values .underValue1 {
+      top: -65px;
+      left: 87px; }
+    .ourValues .values .underValue2 {
+      top: -65px;
+      left: 73px; }
+    .ourValues .values .underValue3 {
+      top: -60px;
+      left: 93px;
+      font-size: 8.4rem !important; }
+    .ourValues .values .handmade img {
+      width: 221px;
+      height: 174px;
+      margin-top: 47px; }
+    .ourValues .values .premium img {
+      width: 200px;
+      height: 219px; }
+    .ourValues .values .art img {
+      width: 202px;
+      height: 178px;
+      margin-top: 47px; }
+
+.videoPresentation {
+  width: 100%;
+  height: 900px;
+  background-image: linear-gradient(to left top, #fffcf4, #fffcf8, #fffcfc, #fffeff, #ffffff);
+  position: relative;
+  z-index: -2; }
+  .videoPresentation p {
+    padding: 0 30%;
+    font-family: "Montserrat";
+    font-size: 1.6rem; }
+  .videoPresentation a {
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    color: black; }
+    .videoPresentation a div {
+      border: 1px black solid;
+      margin: 30px auto;
+      padding: 10px 50px;
+      font-family: "Montserrat";
+      font-size: 1.8rem; }
+  .videoPresentation .shrine {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.19;
+    width: 1300px;
+    z-index: -5; }
+  .videoPresentation .videoPresContainer {
+    position: relative; }
+    .videoPresentation .videoPresContainer .videoPres {
+      width: 1000px;
+      height: 563px;
+      background: black;
+      margin: 100px auto; }
+    .videoPresentation .videoPresContainer .videoLignLeft {
+      position: absolute;
+      width: 200px;
+      height: 1px;
+      background: black;
+      top: 50%;
+      left: 5%; }
+    .videoPresentation .videoPresContainer .videoLignRight {
+      position: absolute;
+      width: 200px;
+      height: 1px;
+      background: black;
+      top: 50%;
+      right: 5%; }
+
+.moreAbout {
+  margin: 50px 15%; }
+  .moreAbout .titleBoxAbout {
+    position: relative; }
+  .moreAbout h3 {
+    font-family: "Playfair Display";
+    font-weight: 900;
+    font-size: 7.8rem; }
+  .moreAbout span.underTitles {
+    position: absolute;
+    font-family: 'Againts';
+    font-size: 13rem;
+    opacity: 0.15;
+    top: -27px;
+    left: -46px; }
 
 /*RESET*/
 * {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline; }
+
+html {
+  font-size: 62.5%; }
+
+.italic {
+  font-style: italic; }
+
+.bold {
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'Againts';
+  src: url("../fonts/againts.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 
 /*# sourceMappingURL=master.css.map */
