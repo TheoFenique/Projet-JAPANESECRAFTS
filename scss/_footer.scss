@@ -1,0 +1,70 @@
+.footer{
+  width: 100%;
+  display: flex;
+  height: 50rem;
+  background: #262626;
+
+  .ContactUs{
+    z-index: 20;
+  	margin: 0 15%;
+  	position: relative;
+
+
+  .titleBoxContact{
+		z-index: 1;
+
+		h3{
+			font-family: $titleFont;
+			font-weight: 900;
+			font-size: 7.8rem;
+      color: #FFFFFF;
+		}
+		span.underTitles{
+			position: absolute;
+			font-family: 'Againts';
+			font-size: 11rem;
+			opacity: 0.15;
+      top: -20px;
+      left: 10px;
+
+		}
+	}
+}
+.Social{
+  height: 10vh;
+  margin-top: 10%;
+  .SocialIcon{
+    img{
+      width: 10rem;
+      padding-left: 4vw;
+    }
+  }
+}
+form{
+  margin-top: 8em;
+
+  input, textarea{
+    width: 25em;
+    height: 1.5em;
+    display: block;
+    background-color:  rgba(0, 0, 0, 0);
+    border-bottom: .01em solid #ccc;
+    font-family: Montserrat;
+    margin-top: -1.5em;
+    color: #fff;
+    font-size: 1.7rem;
+    padding-left: 13rem; 
+
+    #container{
+
+    }
+
+  }
+
+  label{
+    color:  #FFFFFF;
+    font-family: $txtFont;
+    font-size: 2rem;
+  }
+}
+}

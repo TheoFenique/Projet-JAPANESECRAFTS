@@ -67,11 +67,12 @@
 			font-size: 7.8rem;
 		}
 		span.underTitles{
+			position: absolute;
 			font-family: 'Againts';
 			font-size: 13rem;
 			opacity: 0.15;
-			display:table;
-			margin:0 auto;
+			top:-27px;
+			left:355px;
 		}
 	}
 
