@@ -11,6 +11,9 @@
   justify-content: space-between;
   position: fixed;
   z-index: 200; }
+  .navBar a {
+    text-decoration: none;
+    color: white; }
   .navBar .navbarLeft {
     display: flex; }
   .navBar .logo {
@@ -45,9 +48,11 @@
       width: 20px;
       font-weight: 900;
       font-size: 10rem;
-      line-height: 100px; }
+      line-height: 100px;
+      color: white;
+      text-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
     .containerVideo .brandPresentation p {
-      font-size: 1.7rem;
+      font-size: 1.9rem;
       font-family: "Montserrat";
       width: 270px; }
   .containerVideo .mainvideo {
@@ -137,17 +142,19 @@
     padding: 0 30%;
     font-family: "Montserrat";
     font-size: 1.6rem; }
-  .videoPresentation a {
-    display: flex;
+  .videoPresentation .kickstarterButton {
+    display: block;
+    border: 1px black solid;
+    font-size: 1.1rem;
+    font-family: "Montserrat";
+    padding: 10px 20px;
+    margin: 30px auto;
+    width: 200px;
     text-align: center;
-    text-decoration: none;
-    color: black; }
-    .videoPresentation a div {
-      border: 1px black solid;
-      margin: 30px auto;
-      padding: 10px 50px;
-      font-family: "Montserrat";
-      font-size: 1.8rem; }
+    z-index: 20; }
+    .videoPresentation .kickstarterButton a {
+      text-decoration: none;
+      color: black; }
   .videoPresentation .shrine {
     position: absolute;
     bottom: 0px;
@@ -161,7 +168,7 @@
     .videoPresentation .videoPresContainer .videoPres {
       width: 1000px;
       height: 563px;
-      background: black;
+      background: none;
       margin: 100px auto; }
     .videoPresentation .videoPresContainer .videoLignLeft {
       position: absolute;
@@ -169,14 +176,20 @@
       height: 1px;
       background: black;
       top: 50%;
-      left: 5%; }
+      left: 5%;
+      z-index: 0; }
+    .videoPresentation .videoPresContainer .kickstaterVideo {
+      width: 100%;
+      height: 100%;
+      z-index: 20; }
     .videoPresentation .videoPresContainer .videoLignRight {
       position: absolute;
       width: 200px;
       height: 1px;
       background: black;
       top: 50%;
-      right: 5%; }
+      right: 5%;
+      z-index: 0; }
 
 .moreAbout {
   margin: 50px 15%; }
@@ -194,23 +207,85 @@
     top: -27px;
     left: -46px; }
 
+.moreContainer {
+  margin: auto 6%;
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+  align-items: center; }
+  .moreContainer .inspirations {
+    transition: all 0.15s ease-in-out; }
+  .moreContainer .inspirations:hover, .moreContainer .whoAreWe:hover {
+    width: 70%;
+    opacity: 1; }
+  .moreContainer h4 {
+    font-family: "Montserrat";
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0px auto 30px auto;
+    text-align: center;
+    opacity: 1 !important;
+    transition: 0.15s ease-in-out all; }
+  .moreContainer p {
+    font-family: "Montserrat";
+    font-size: 1.2rem;
+    padding: 10px;
+    display: none;
+    margin-top: 60px;
+    opacity: 0;
+    transition: all 0.15s ease-in-out; }
+  .moreContainer #moreSeparation {
+    width: 1px;
+    height: 300px;
+    background: black;
+    transform: rotate(30deg);
+    margin: 0 30px; }
+
+.whoAreWe {
+  display: block;
+  transition: 0.15s ease-in-out all; }
+
+.whoAreWe:hover p, .inspirations:hover p {
+  display: block;
+  margin-top: 20px;
+  opacity: 1; }
+
+.inspiButton, .whoButton {
+  display: none;
+  border: 1px black solid;
+  font-size: 1.1rem;
+  font-family: "Montserrat";
+  padding: 10px 20px;
+  margin: auto;
+  width: 200px;
+  text-align: center; }
+  .inspiButton a, .whoButton a {
+    text-decoration: none;
+    color: black; }
+
+.inspirations:hover .inspiButton, .whoAreWe:hover .whoButton {
+  display: block;
+  margin-top: 20px;
+  opacity: 1; }
+
 .footer {
   width: 100%;
   display: flex;
-  height: 50rem;
+  height: 77rem;
   background: #262626; }
-  .footer .ContactUs {
+  .footer .contactUs {
     z-index: 20;
     margin: 0 15%;
     position: relative; }
-    .footer .ContactUs .titleBoxContact {
-      z-index: 1; }
-      .footer .ContactUs .titleBoxContact h3 {
+    .footer .contactUs .titleBoxContact {
+      z-index: 1;
+      margin: 30px 0; }
+      .footer .contactUs .titleBoxContact h3 {
         font-family: "Playfair Display";
         font-weight: 900;
         font-size: 7.8rem;
         color: #FFFFFF; }
-      .footer .ContactUs .titleBoxContact span.underTitles {
+      .footer .contactUs .titleBoxContact span.underTitles {
         position: absolute;
         font-family: 'Againts';
         font-size: 11rem;
@@ -218,28 +293,46 @@
         top: -20px;
         left: 10px; }
   .footer .Social {
-    height: 10vh;
-    margin-top: 10%; }
-    .footer .Social .SocialIcon img {
-      width: 10rem;
-      padding-left: 4vw; }
+    width: 100%;
+    margin: 15% 9%; }
+    .footer .Social .SocialIcon {
+      display: flex;
+      justify-content: space-between; }
+      .footer .Social .SocialIcon img {
+        width: 70px;
+        height: 70px; }
   .footer form {
     margin-top: 8em; }
     .footer form input, .footer form textarea {
       width: 25em;
       height: 1.5em;
       display: block;
-      background-color: rgba(0, 0, 0, 0);
+      background-color: transparent;
       border-bottom: .01em solid #ccc;
       font-family: Montserrat;
       margin-top: -1.5em;
       color: #fff;
       font-size: 1.7rem;
-      padding-left: 13rem; }
-    .footer form label {
-      color: #FFFFFF;
+      margin: 30px 0;
+      outline: none; }
+    .footer form textarea {
+      height: 250px; }
+    .footer form button {
+      display: inline-block;
+      font-size: 1.2rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-width: 2px;
+      border-style: solid;
+      padding: .3em 1em;
+      margin-top: 1em;
       font-family: "Montserrat";
-      font-size: 2rem; }
+      font-style: italic;
+      color: white;
+      border: 1px white solid;
+      background: none;
+      font-weight: 900;
+      font-size: 1.4rem; }
 
 /*RESET*/
 * {
@@ -263,5 +356,17 @@ html {
   src: url("../fonts/againts.otf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+::-webkit-scrollbar {
+  width: 7px; }
+
+::-webkit-scrollbar-track {
+  background: #f3f3f3; }
+
+::-webkit-scrollbar-thumb {
+  background: #a4a4a4;
+  transition: all 0.5s ease-in; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d9d9d9; }
 
 /*# sourceMappingURL=master.css.map */

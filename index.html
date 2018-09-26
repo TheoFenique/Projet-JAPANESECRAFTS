@@ -13,10 +13,10 @@
           <div class="navbarLeft">
             <img class="logo" src="images/logo_01.png" alt="logo">
             <ul>
-              <li>Home</li>
-              <li>Who we are ?</li>
-              <li>Inspirations</li>
-              <li>Support us</li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Who are we ?</a></li>
+              <li><a href="#">Inspirations</a></li>
+              <li><a href="#">Support us</a></li>
             </ul>
           </div>
           <div class="navbarRight">
@@ -76,23 +76,42 @@
         <img class="shrine" src="images/arche.png" alt="shrine arita">
         <div class="videoPresContainer">
           <div class="videoPres">
-            <!--Inserer video ici-->
+            <video class="kickstaterVideo" >
+              <source src="videos/videokickstater.mp4" type="video/mp4">
+            </video>
           </div>
           <div class="videoLignLeft"></div>
           <div class="videoLignRight"></div>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href="https://www.facebook.com">
-          <div class="kickstarterButon">
-            Our kickstarter
-          </div>
-        </a>
+        <p>This project began from the vision of a chef who aspires to create the ultimate dining experience. That chef’s name is Seita. He is the owner and chef of terra Tokyo Italian, a Michelin Star winning Italian restaurant in Singapore. Originally this project started with the goal of creating original dishware to be used at terra Tokyo Italian, but chef Seita saw a greater potential to share Arita Ware, the pride of Japan, with the rest of the world. Thus it was decided that, in addition to being used at terra Tokyo Italian, this series of original tableware would receive a limited release available only on Kickstarter.
+</p>
+        <div class="kickstarterButton">
+          <a href="#">Our kickstarter</a>
+        </div>
       </div>
 
       <div class="moreAbout">
         <div class="titleBoxAbout">
           <h3>More about us</h3>
           <span class="underTitles">More about us</span>
+        </div>
+        <div class="moreContainer">
+          <div class="whoAreWe">
+            <h4>Who are we ?</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="whoButton">
+              <a href="#">Who are we ?</a>
+            </div>
+          </div>
+          <div id="moreSeparation"><!--moreSeparation--></div>
+          <div class="inspirations">
+            <h4>Inspirations</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="inspiButton">
+              <a href="#">Our Inspirations</a>
+            </div>
+          </div>
+
         </div>
 
 
@@ -102,31 +121,30 @@
     <script src="js/app.js" charset="utf-8">
     </script>
     <footer class="footer">
-      <div class="ContactUs">
+      <div class="contactUs">
         <div class="titleBoxContact">
-          <h3>contact us</h3>
-          <span class="underTitles">contact us</span></div>
-          <form method="post" action="traitement.php">
-            <label for="Email">Email: </label>
-            <input type="text" name="Email" id="Email"><br><br>
+          <h3>Contact us</h3>
+        </div>
+        <form method="post" action="traitement.php">
+          <label for="Email"></label>
+          <input type="text" name="Email" id="Email" placeholder="Email">
 
-            <label for="Subject">Subject:</label>
-            <input type="text" name="Subject" id="Subject"><br><br>
+          <label for="Subject"></label>
+          <input type="text" name="Subject" id="Subject" placeholder="Subject">
 
-            <label for="TelNumber">Tel.Number:</label>
-            <input type="text" name="TelNumber" id="TelNumber"><br><br>
+          <label for="TelNumber"></label>
+          <input type="text" name="TelNumber" id="TelNumber" placeholder="Tel.Number">
 
-            <label for="Message">Message: </label>
-            <textarea name="prez" id="message"></textarea><br><br>
+          <label for="Message"></label>
+          <textarea name="prez" id="message" placeholder="Message"></textarea>
 
-            <button type="submit" name="Envoyer"></button>
-          </form>
-
+          <button type="submit" name="Envoyer">Send</button>
+        </form>
       </div>
       <div class="Social">
         <div class="SocialIcon">
-          <img src="images/instalogo.png" alt="instalogo">
-          <img src="images/instalogo.png" alt="instalogo">
+          <img src="images/facebook.png" alt="instalogo">
+          <img src="images/twitter.png" alt="instalogo">
           <img src="images/instalogo.png" alt="instalogo">
         </div>
 
