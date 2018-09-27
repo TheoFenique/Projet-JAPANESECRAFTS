@@ -5,7 +5,7 @@
   <title> Japanese craft </title>
   <meta name="Japanese craft" content="Japanese craft"/>
   <link rel="stylesheet" type="text/css" href="css/master.css" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Playfair+Display:400,400i,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,900 |Playfair+Display:400,400i,900" rel="stylesheet">
 </head>
   <body>
     <header>
@@ -24,33 +24,63 @@
         </div>
       </nav> <!-- Navbar End-->
     </header>
-    <div class="flexContainer">
+    <div class="flexContainerInspi">
       <div class="titleBoxInspi">
         <h3>Inspirations</h3>
         <span class="underTitles">Inspirations</span>
       </div>
     </div>
-    <div class="inspiContainer">
-      <div class="inspiLand">
-        <img class="landimg" src="images\bois inspiration.png" alt="land theme">
-        <a href="#">
-          <img src="images/arrowLeft.png" alt="Land Theme Arrow">
-          <h2>Arita's Legacy</h2>
+    <div class="inspiBox">
+      <img class="inspiBg" src="images\inspiBg.png" alt="artistic inspirations">
+      <div class="inspiTitleOverlay">
+        <a class="waterLink" href="#">
+          <img class="arrow" src="images/arrowLeft.png" alt="arrow">
+          <h2>Arita's legacy</h2>
         </a>
-      </div>
-      <div class="inspiWater">
-        <img class="inspiWater" src="images\marbre inspi.png" alt="water theme">
-        <a href="#">
+        <a class="landLink" href="#">
           <h2>Seita's hope</h2>
-          <img src="images/arrowRight.png" alt="Land Theme Arrow">
-
+          <img class="arrow" src="images/arrowRight.png" alt="arrow">
         </a>
+      </div>
+      <div class="txtWater">
+        <h4>Water</h4>
+        <p class="leftTxt"><span class="bold">Chef Seita</span> has a dream to express terra Tokyo Italian’s themes of “water” and “earth” through pottery. To represent <span class="bold">the themes of “water”, the colors blue was chosen</span>.</p>
+        <p>Blue also have added significance - blue being the symbolic color of Arita, birth place of Japenese porcelain.About 400 years ago in 1616, high quality potters stone was discovered at Izumiyama, thus beginning Arita’s long history of ceramics.<span class="">With its characteristic thin, soft white surfaces adorned with finely painted design</span> s adherent to the highly refined aesthetic sensibility of Japan, Arita Ware has been coveted by overseas traders for hundreds of years.</p>
 
       </div>
-      <div class="inspiCenter">
-        <img src="images/assietteTerreMer2.png" alt="tablewear">
-      </div>
+      <div class="txtLand">
+        <h4>Earth</h4>
+        <p class="rightTxt">Chef Seita has a dream to express terra Tokyo Italian’s themes of “water” and “earth” through pottery. To represent <span class="bold">the themes of  “earth”, the colors brown was chosen.</span> Brown also have added significance- brown being the theme color of terra Tokyo Italian. Through these two colors, we aimed to express the harmony between water and earth.</p>
+        <p><span class="bold">A technique called Awageshou, a bubble glazing was chosen</span>. This technique involves creating a foam from thinned glaze which is then applied to and fired onto the porcelain. When placing the dishware into the kiln it is easy to ruin the patterns created by the glaze bubbles.</p>
 
+      </div>
     </div>
+    <footer class="footer">
+      <div class="contactUs">
+        <div class="titleBoxContact">
+          <h3>Contact us</h3>
+        </div>
+        <form method="post" action="traitement.php">
+          <label for="Email"></label>
+          <input type="text" name="Email" id="Email" placeholder="Email">
+          <label for="Subject"></label>
+          <input type="text" name="Subject" id="Subject" placeholder="Subject">
+          <label for="TelNumber"></label>
+          <input type="text" name="TelNumber" id="TelNumber" placeholder="Tel.Number">
+          <label for="Message"></label>
+          <textarea name="prez" id="message" placeholder="Message"></textarea>
+          <button type="submit" name="Envoyer">Send</button>
+        </form>
+      </div>
+      <div class="Social">
+        <div class="SocialIcon">
+          <img src="images/facebook.png" alt="instalogo">
+          <img src="images/twitter.png" alt="instalogo">
+          <img src="images/instalogo.png" alt="instalogo">
+        </div>
+      </div>
+    </footer>
   </body>
+  <script src="js/inspirationsAnim.js">
+  </script>
 </html>
