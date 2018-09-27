@@ -1,6 +1,7 @@
 $titleFont: "Playfair Display";
 $underFont : "Againts";
 $txtFont : "Montserrat";
+$japanFont : "Tarokofont";
 
 
 @import "header";
@@ -32,6 +33,13 @@ html{
 @font-face {
 	font-family: 'Againts';
 	src: url('../fonts/againts.otf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Tarokofont';
+	src: url('../fonts/tarokofont.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
