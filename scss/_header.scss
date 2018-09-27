@@ -11,14 +11,21 @@
   justify-content: space-between;
   position: fixed;
 	z-index: 200;
+	overflow: hidden;
+
 
 	a{
 		text-decoration: none;
 		color: white;
 	}
 
-  .navbarLeft{
+	.navbarLeft{
+		width: 550px;
+	}
+
+  .navbarLeft, .navbarRight{
     display: flex;
+		align-items: center
   }
 
 	.logo{
@@ -32,15 +39,59 @@
   }
 
 	ul{
+		display: flex;
 
 		li{
+			margin-left: 50px;
 			vertical-align: baseline;
 			display: inline-block;
 			color: #f3f3f3;
 			font-family: 'Montserrat', sans-serif;
 			vertical-align: bottom;
-			padding-left: 3vw;
-      margin-top: 2.5%;
+			position: relative;
+
 		}
 	}
+}
+
+ul li::after{
+	content: "";
+	position: absolute;
+	height: 1px;
+	background: white;
+	left:0;
+	bottom:-15px;
+	transition: all 0.35s ease-out;
+}
+
+
+
+ul li:hover::after{
+	bottom: -23px;
+	width: 100%;
+	border-bottom: 2px white solid;
+	animation-duration: 1s;
+  animation-name: navHover;
+}
+
+
+
+@keyframes navHover {
+  from {
+		bottom:-15px;
+		width: 1px;
+		border-bottom: 0px;
+  }
+  50% {
+		bottom:-15px;
+		width: 100%;
+		border-bottom: 0px;
+
+}
+
+  to {
+		bottom:-23px;
+		width: 100%;
+		border-bottom: 2px white solid;
+  }
 }

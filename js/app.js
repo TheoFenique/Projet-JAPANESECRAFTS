@@ -1,7 +1,5 @@
-let YScrollPosition
-
+let YScrollPosition//Parallax function for the Shrine.
 let parallaxTarget = document.querySelector('#shrine')
-console.log(parallaxTarget)
 
 window.addEventListener("DOMContentLoaded", scrollLoop, false)
 

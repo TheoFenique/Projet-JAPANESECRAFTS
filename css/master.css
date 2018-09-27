@@ -10,27 +10,62 @@
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   justify-content: space-between;
   position: fixed;
-  z-index: 200; }
+  z-index: 200;
+  overflow: hidden; }
   .navBar a {
     text-decoration: none;
     color: white; }
   .navBar .navbarLeft {
-    display: flex; }
+    width: 550px; }
+  .navBar .navbarLeft, .navBar .navbarRight {
+    display: flex;
+    align-items: center; }
   .navBar .logo {
     width: 25px;
     height: 25px;
     padding: 1vh; }
   .navBar .kickstarter {
     height: 20px; }
-  .navBar ul li {
-    vertical-align: baseline;
-    display: inline-block;
-    color: #f3f3f3;
-    font-family: 'Montserrat', sans-serif;
-    vertical-align: bottom;
-    padding-left: 3vw;
-    margin-top: 2.5%; }
+  .navBar ul {
+    display: flex; }
+    .navBar ul li {
+      margin-left: 50px;
+      vertical-align: baseline;
+      display: inline-block;
+      color: #f3f3f3;
+      font-family: 'Montserrat', sans-serif;
+      vertical-align: bottom;
+      position: relative; }
 
+ul li::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: white;
+  left: 0;
+  bottom: -15px;
+  transition: all 0.35s ease-out; }
+
+ul li:hover::after {
+  bottom: -23px;
+  width: 100%;
+  border-bottom: 2px white solid;
+  animation-duration: 1s;
+  animation-name: navHover; }
+
+@keyframes navHover {
+  from {
+    bottom: -15px;
+    width: 1px;
+    border-bottom: 0px; }
+  50% {
+    bottom: -15px;
+    width: 100%;
+    border-bottom: 0px; }
+  to {
+    bottom: -23px;
+    width: 100%;
+    border-bottom: 2px white solid; } }
 .flexContainer {
   display: flex;
   justify-content: center; }
@@ -73,18 +108,20 @@
   margin: 0 15%;
   position: relative; }
   .ourValues .titleBoxValues {
-    z-index: 1; }
+    z-index: 1;
+    margin-top: 40px; }
     .ourValues .titleBoxValues h3 {
       font-family: "Playfair Display";
       font-weight: 900;
-      font-size: 7.8rem; }
+      font-size: 7.8rem;
+      line-height: 0; }
     .ourValues .titleBoxValues span.underTitles {
-      position: absolute;
       font-family: 'Againts';
       font-size: 13rem;
       opacity: 0.15;
-      top: -27px;
-      left: 355px; }
+      margin: 0 auto;
+      transform: translate3d(-5%, -46%, 0);
+      position: absolute; }
   .ourValues .values {
     display: flex;
     justify-content: space-between;
@@ -141,12 +178,15 @@
   .videoPresentation p {
     padding: 0 30%;
     font-family: "Montserrat";
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    line-height: 32px; }
   .videoPresentation .kickstarterButton {
     display: block;
     border: 1px black solid;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 900;
     padding: 10px 20px;
     margin: 30px auto;
     width: 200px;
@@ -226,8 +266,8 @@
     .moreContainer .inspirations p, .moreContainer .whoAreWe p {
       opacity: 0;
       font-family: "Montserrat";
-      font-size: 1.2rem;
-      line-height: 20px;
+      font-size: 1.4rem;
+      line-height: 26px;
       transition: all 0.35s ease-out; }
     .moreContainer .inspirations .inspiButton, .moreContainer .inspirations .whoButton, .moreContainer .whoAreWe .inspiButton, .moreContainer .whoAreWe .whoButton {
       border: 1px black solid;
@@ -251,7 +291,7 @@
   height: 300px; }
 
 .inspirations:hover, .whoAreWe:hover {
-  height: 220px; }
+  height: 250px; }
 
 .inspirations:hover p, .whoAreWe:hover p {
   opacity: 1;
@@ -269,6 +309,79 @@
     opacity: 0; }
   to {
     opacity: 1; } }
+.titleBoxInspi {
+  margin-top: 150px;
+  z-index: 1; }
+  .titleBoxInspi h3 {
+    font-family: "Playfair Display";
+    font-weight: 900;
+    font-size: 7.8rem;
+    line-height: 0; }
+  .titleBoxInspi span.underTitles {
+    font-family: 'Againts';
+    font-size: 13rem;
+    opacity: 0.15;
+    margin: 0 auto;
+    transform: translate3d(-5%, -46%, 0);
+    position: absolute; }
+
+.inspiContainer {
+  display: flex;
+  overflow: hidden;
+  margin-top: 80px;
+  position: relative; }
+  .inspiContainer .inspiLand {
+    width: 100%;
+    height: 90vh;
+    background: red; }
+    .inspiContainer .inspiLand a {
+      width: 200px;
+      height: 50px;
+      background: #262626;
+      position: absolute;
+      left: 45%;
+      top: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      z-index: 50;
+      display: flex;
+      align-items: center; }
+      .inspiContainer .inspiLand a h2 {
+        text-align: center;
+        display: inline-block; }
+    .inspiContainer .inspiLand img {
+      height: 20px;
+      margin: auto 20px; }
+  .inspiContainer .inspiWater {
+    width: 100%;
+    height: 90vh;
+    background: green; }
+    .inspiContainer .inspiWater a {
+      width: 200px;
+      height: 50px;
+      background: #f3f3f3;
+      position: absolute;
+      left: 55%;
+      top: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      z-index: 50;
+      display: flex;
+      align-items: center; }
+      .inspiContainer .inspiWater a h2 {
+        text-align: center;
+        display: inline-block;
+        float: right; }
+    .inspiContainer .inspiWater img {
+      height: 20px;
+      margin: auto 20px auto auto; }
+  .inspiContainer .inspiCenter {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    transform: translate3d(-50%, -50%, 0);
+    background: grey;
+    top: 50%;
+    left: 50%; }
+
 .footer {
   width: 100%;
   display: flex;

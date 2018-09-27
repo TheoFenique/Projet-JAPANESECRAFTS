@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=fr>
+<html lang=en>
   <head>
     <meta charset="utf-8"/>
     <title> Japanese craft </title>
@@ -13,10 +13,10 @@
           <div class="navbarLeft">
             <img class="logo" src="images/logo_01.png" alt="logo">
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Who are we ?</a></li>
-              <li><a href="#">Inspirations</a></li>
-              <li><a href="#">Support us</a></li>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="whoarewe.html">Who are we ?</a></li>
+              <li><a href="inspirations.html">Inspirations</a></li>
+              <li><a href="supportus.html">Support us</a></li>
             </ul>
           </div>
           <div class="navbarRight">
@@ -36,7 +36,6 @@
           <img src="images/transition.png" alt="japan craft transition">
         </div>
       </div>
-
       <div class="ourValues">
         <div class="flexContainer">
           <div class="titleBoxValues">
@@ -50,15 +49,15 @@
             <div class="valueTxt">
               <h2>Handmade</h2>
               <span class="underValue1">1</span>
-              <p>Our products are hand-made, unique, a quality guarantee.</p>
+              <p>Our products are <span class="bold">hand-made</span>, unique, a <span class="bold">quality</span> guarantee.</p>
             </div>
           </div>
           <div class="premium">
-            <img src="images/premium.png" alt="handmade logo">
+            <img src="images/traditions.png" alt="handmade logo">
             <div class="valueTxt">
-              <h2>Premium</h2>
+              <h2>Traditions</h2>
               <span class="underValue2">2</span>
-              <p>Premium materials, premium production and premium craftmanship, nothing is due to hazard</p>
+              <p>Because we are proud of our <span class="bold">culture</span>, you can be sure that our work is <span class="bold">japanese</span>, and nothing else.</p>
             </div>
           </div>
           <div class="art">
@@ -66,30 +65,28 @@
             <div class="valueTxt">
               <h2>An art piece</h2>
               <span class="underValue3">3</span>
-              <p>Because you deserve to eat in an art masterpiece, our products are unique and created as an art piece.</p>
+              <p>Because you deserve to eat in an <span class="bold">art masterpiece</span> , our products are unique and created like art.</p>
             </div>
           </div>
         </div>
       </div>
-
       <div class="videoPresentation">
         <img class="shrine" src="images/arche.png" alt="shrine arita" id="shrine">
         <div class="videoPresContainer">
           <div class="videoPres">
-            <video class="kickstaterVideo" >
-              <source src="videos/videokickstater.mp4" type="video/mp4">
+            <video controls class="kickstaterVideo" >
+              <source  src="videos/videokickstater.mp4" type="video/mp4">
             </video>
           </div>
           <div class="videoLignLeft"></div>
           <div class="videoLignRight"></div>
         </div>
-        <p>This project began from the vision of a chef who aspires to create the ultimate dining experience. That chef’s name is Seita. He is the owner and chef of terra Tokyo Italian, a Michelin Star winning Italian restaurant in Singapore. This series of original tableware would receive a limited release available only on Kickstarter.
+        <p>This project began from the vision of a chef who aspires to create <span class="bold">the ultimate dining experience</span>. That chef’s name is Seita. He is the owner and chef of terra Tokyo Italian, a Michelin Star winning Italian restaurant in Singapore. This series of original tableware would receive a limited release available <span class="bold">only on Kickstarter</span>.
         </p>
         <div class="kickstarterButton">
           <a href="#">Our kickstarter</a>
         </div>
       </div>
-
       <div class="moreAbout">
         <div class="titleBoxAbout">
           <h3>More about us</h3>
@@ -98,7 +95,7 @@
         <div class="moreContainer">
           <div class="whoAreWe">
             <h4>Who are we ?</h4>
-            <p>Let the 2 artists behind this project present theirself. Find out where they are from and why they discided to bring a whole new type of art.</p>
+            <p>Let the <span class="bold">2 artists</span> behind this project present theirself. Find out where they are from and why they discided to bring to the world a whole <span class="bold">new type of art</span>.</p>
             <div class="whoButton">
               <a href="#">Who are we ?</a>
             </div>
@@ -106,48 +103,40 @@
           <div id="moreSeparation"><!--moreSeparation--></div>
           <div class="inspirations">
             <h4>Inspirations</h4>
-            <p>Discover how 2 simple themes are the lead of our artistic creation. Between land and water, follow us through our complex artistic process to create unique pieces of art.</p>
+            <p>Discover how <span class="bold">2 simple themes</span> are the artistic direction of our artistic creation. Between <span class="bold">land and water</span>, follow us through our complex artistic process to create unique pieces of art.</p>
             <div class="inspiButton">
               <a href="#">Our Inspirations</a>
             </div>
           </div>
-
         </div>
-
-
-
       </div>
+      <footer class="footer">
+        <div class="contactUs">
+          <div class="titleBoxContact">
+            <h3>Contact us</h3>
+          </div>
+          <form method="post" action="traitement.php">
+            <label for="Email"></label>
+            <input type="text" name="Email" id="Email" placeholder="Email">
+            <label for="Subject"></label>
+            <input type="text" name="Subject" id="Subject" placeholder="Subject">
+            <label for="TelNumber"></label>
+            <input type="text" name="TelNumber" id="TelNumber" placeholder="Tel.Number">
+            <label for="Message"></label>
+            <textarea name="prez" id="message" placeholder="Message"></textarea>
+            <button type="submit" name="Envoyer">Send</button>
+          </form>
+        </div>
+        <div class="Social">
+          <div class="SocialIcon">
+            <img src="images/facebook.png" alt="instalogo">
+            <img src="images/twitter.png" alt="instalogo">
+            <img src="images/instalogo.png" alt="instalogo">
+          </div>
+        </div>
+      </footer>
     </body>
+
     <script src="js/app.js" charset="utf-8">
     </script>
-    <footer class="footer">
-      <div class="contactUs">
-        <div class="titleBoxContact">
-          <h3>Contact us</h3>
-        </div>
-        <form method="post" action="traitement.php">
-          <label for="Email"></label>
-          <input type="text" name="Email" id="Email" placeholder="Email">
-
-          <label for="Subject"></label>
-          <input type="text" name="Subject" id="Subject" placeholder="Subject">
-
-          <label for="TelNumber"></label>
-          <input type="text" name="TelNumber" id="TelNumber" placeholder="Tel.Number">
-
-          <label for="Message"></label>
-          <textarea name="prez" id="message" placeholder="Message"></textarea>
-
-          <button type="submit" name="Envoyer">Send</button>
-        </form>
-      </div>
-      <div class="Social">
-        <div class="SocialIcon">
-          <img src="images/facebook.png" alt="instalogo">
-          <img src="images/twitter.png" alt="instalogo">
-          <img src="images/instalogo.png" alt="instalogo">
-        </div>
-
-      </div>
-    </footer>
 </html>
