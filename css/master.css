@@ -259,6 +259,8 @@ ul li:hover::after {
     .videoPresentation .kickstarterButton a {
       text-decoration: none;
       color: black; }
+    .videoPresentation .kickstarterButton :hover {
+      background-color: #f2f2f2f2; }
   .videoPresentation .shrine {
     position: absolute;
     bottom: 550px;
@@ -565,7 +567,7 @@ ul li:hover::after {
       width: 25em;
       height: 1.5em;
       display: block;
-      background-color: transparent;
+      background-color: rgba(0, 0, 0, 0);
       border-bottom: .01em solid #ccc;
       font-family: Montserrat;
       margin-top: -1.5em;
