@@ -259,8 +259,6 @@ ul li:hover::after {
     .videoPresentation .kickstarterButton a {
       text-decoration: none;
       color: black; }
-    .videoPresentation .kickstarterButton :hover {
-      background-color: #f2f2f2f2; }
   .videoPresentation .shrine {
     position: absolute;
     bottom: 550px;
@@ -342,6 +340,11 @@ ul li:hover::after {
       margin: 30px 130px;
       opacity: 0;
       transition: all 0.65s ease-in; }
+      .moreContainer .inspirations .inspiButton :hover, .moreContainer .inspirations .whoButton :hover, .moreContainer .whoAreWe .inspiButton :hover, .moreContainer .whoAreWe .whoButton :hover {
+        background-color: black;
+        color: #fff;
+        transition: all ease-in-out 250ms;
+        cursor: pointer; }
       .moreContainer .inspirations .inspiButton a, .moreContainer .inspirations .whoButton a, .moreContainer .whoAreWe .inspiButton a, .moreContainer .whoAreWe .whoButton a {
         text-decoration: none;
         color: black;

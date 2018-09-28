@@ -195,9 +195,6 @@
 			text-decoration: none;
 			color: black;
 		}
-		:hover{
-			background-color: #f2f2f2f2;
-		}
 	}
 
 
@@ -311,7 +308,12 @@
 			margin: 30px 130px;
 			opacity: 0;
 			transition: all 0.65s ease-in;
-
+			:hover{
+				background-color: black;
+				color: #fff;
+				transition: all ease-in-out 250ms;
+				cursor: pointer;
+			}
 
 			a{
 				text-decoration: none;
