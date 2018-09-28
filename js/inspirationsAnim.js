@@ -9,7 +9,6 @@ leftButton.addEventListener(
   function(e){
     e.preventDefault()
     if (leftTxt.classList.contains('activeLeft')==true){
-      console.log('pute')
       background.style.left ='-50%'
       leftButton.style.left = '50%'
       rightButton.style.left = '50%'
@@ -31,7 +30,6 @@ rightButton.addEventListener(
   function(e){
     e.preventDefault()
     if (rightTxt.classList.contains('activeRight')==true){
-      console.log('pute')
       background.style.left ='-50%'
       leftButton.style.left = '50%'
       rightButton.style.left = '50%'
