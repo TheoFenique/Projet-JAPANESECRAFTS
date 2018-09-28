@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Japanese Craft</title>
     <meta name="Japanese craft" content="Japanese craft"/>
-    <link rel="stylesheet" type="text/css" href="css/master.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Playfair+Display:400,400i,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/biography.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Playfair+Display:100, 400,400i,900" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -14,7 +14,7 @@
           <img class="logo" src="images/logo_01.png" alt="logo">
           <ul>
             <li><a href="home.html">Home</a></li>
-            <li><a href="whoarewe.html">Who are we ?</a></li>
+            <li><a href="biography.html">Who are we ?</a></li>
             <li><a href="inspirations.html">Inspirations</a></li>
             <li><a href="supportus.html">Support us</a></li>
           </ul>
@@ -24,6 +24,88 @@
         </div>
       </nav> <!-- Navbar End-->
     </header>
-    <div class="biographypresentation"
+      <div class="biographypresentation">
+        <div class="transition">
+          <img src="images/transition.png" alt="japan craft transition">
+        </div>
+        <h1>Biography</h1>
+        <div class="flexContainer">
+          <div class="seitapres"></div>
+          <div class="shibapres"></div>
+        </div>
+        <div class="prestext">
+          <p>
+            In order to create the <strong>highest quality</strong> dishware, we have brought together a group of professionals from a variety of fields.</p>
+          <p>
+            The CEO of <strong>HULS</strong>, a company that has brought many traditional Japanese crafts to the international market, <strong>Mr. Shibata</strong> is in charge of product planning and production.
+          </p>
+          <p> <strong>Chef Seita</strong> adds to the project his conceptual direction and    design ideas.
+           </p>
+          <a href="inspirations.html" class="button-white">Our inspirations</a>
+        </div>
+      </div>
+      <div class="biography-seita">
+        <div class="seita-name">
+          <span class="underTitles">せいたなかはら</span>
+        </div>
+      <div class="seita-img">
+        <img src="images/seita-biography.png" class="sebio" alt="seitaimg">
+      </div>
+      <div class="seita-text">
+        <h2>Seita Nakahara</h2>
+        <h3>Terra Tokyo Italian, Owner and Chef</h3>
+        <p>Philosophy : "Japanese food culture in Italian cuisine"</p>
+        <p>
+          Trained in Piemonte, Tuscany, and Sicily, Italy.
+          Owner and chef of terra Tokyo Italian, a restaurant taking inspiration from both Italian and Japanese food culture.
+        </p>
+         <pre>
+            <strong>2014 :</strong>   Placed in the top 5 in Italian cooking at RED U-35,
+            <strong>2015 :</strong>   Opened terra Tokyo Italian Singapore
+            <strong>2016 :</strong>   terra Tokyo Italian awarded a Michelin Star
+          </pre>
+        </div>
+      </div>
+      <div class="biography-shibata">
+        <div class="shibata-name">
+          <span class="underTitles">柴田裕介</span>
+        </div>
+        <div class="shibata-img">
+          <img src="images/shibata-biography.png" class="shbio" alt="shibaimg">
+        </div>
+        <div class="shibata-text">
+          <h2>Yusuke Shibata</h2>
+          <h3>Terra Tokyo Italian, Owner and Chef</h3>
+          <p>
+            After working at a design firm, he gained experience in international business with a foreign trading company.
+            Later he founded HULS, a company that brings the appeal of Japanese crafts to the world. Having traveled to more than 15 countries, he is now focused on expanding Japanese craft overseas with a focus on Singapore.
+          </p>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="contactUs">
+          <div class="titleBoxContact">
+            <h3>Contact us</h3>
+          </div>
+          <form method="post" action="traitement.php">
+            <label for="Email"></label>
+            <input type="text" name="Email" id="Email" placeholder="Email">
+            <label for="Subject"></label>
+            <input type="text" name="Subject" id="Subject" placeholder="Subject">
+            <label for="TelNumber"></label>
+            <input type="text" name="TelNumber" id="TelNumber" placeholder="Tel.Number">
+            <label for="Message"></label>
+            <textarea name="prez" id="message" placeholder="Message"></textarea>
+            <button type="submit" name="Envoyer">Send</button>
+          </form>
+        </div>
+        <div class="Social">
+          <div class="SocialIcon">
+            <img src="images/facebook.png" alt="instalogo">
+            <img src="images/twitter.png" alt="instalogo">
+            <img src="images/instalogo.png" alt="instalogo">
+          </div>
+        </div>
+      </footer>
   </body>
 </html>

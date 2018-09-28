@@ -420,7 +420,7 @@
 		align-items: center;
 		display: flex;
 		font-family: $titleFont;
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 	}
 
 	.arrow{
@@ -458,17 +458,18 @@
 
 .txtWater, .txtLand{
 	position: absolute;
-	top: 50%;
-	background: white;
-	width: 40%;
-	height: 300px;
-	transform: translate3d(-50%,-50%,0);
-	padding: 30px;
-	font-family: $txtFont;
-	display: none;
-	opacity: 0;
-	animation-duration: 1s;
-	animation-name: pTransitionBack;
+  top: 50%;
+  background: white;
+  width: 40%;
+  height: 500px;
+  transform: translate3d(-50%, -50%, 0);
+  padding: 75px;
+  font-family: "Montserrat";
+  display: none;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-name: pTransitionBack;
+  box-sizing: border-box;
 
 	h4{
 		text-align: center;
@@ -549,7 +550,7 @@
 }
 
   to {
-		display: block;
+		display: none;
 		opacity: 0;
 		left: 25%;
 
